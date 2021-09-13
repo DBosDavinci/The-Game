@@ -50,8 +50,20 @@ if keuze1 == "A" or "a":
                         print("You try to attack the zombie, but you fail to swing at the zombie because you don't have enough energy left.")
                     if keuze6 == "b" or "B":
                         print("You try to run from the zombie, but you don't have enough energy left. RIP")
-    if keuze2 == "A" or "a":
-        keuze3 = input()
+    if keuze2 == "B" or "b":
+        keuze3 = input("You walk up to the hospital, but the front door is open. You also spot a broken window on the side of the building.")
+        if keuze3 == "a" or "A":
+            print("You enter through the front door, but you immediately get ambushed by 3 zombies. RIP")
+        if keuze3 == "b" or "B":
+            keuze4 = input("You climb through the broken window, it's totally dark inside but you can see something shiny lying on the ground. You pick it up, to inspect it and you find out it's a needle. You feel pretty tired, but is it a good idea to inject yourself?"
+            "a) Inject yourself with the needle you found lying on the ground."
+            "b) Don't inject yourself with the needle you found lying on the ground.")
+            if keuze4 == "a" or "A":
+                keuze5 = input("After injecting yourself with the needle, you start to feel pretty sick and dizzy. It probably wasn't a good idea to inject yourself with a needle, but how are you going to fix this?"
+                "a) Drink some water and wait it out"
+                "b) Inject yourself with some other needles lying on the ground")
+            if keuze4 == "b" or "B":
+                keuze5 = input()
 if keuze1 == "b" or "B":
     keuze2 = input("You find a broken glass bottle on the floor, you can use to try to kill the zombie. Will you try it?\n"
     "a) Attack the zombie\n"
