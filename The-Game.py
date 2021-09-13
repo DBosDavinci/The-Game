@@ -83,7 +83,9 @@ elif keuze1 == "b" or keuze1 == "B":
     if keuze2 == "a" or keuze2 == "A":
         print(name,"tries to kill the zombie, you succeed, but while you were killing it 5 other zombies entered the building. RIP")
     elif keuze2 == "b" or keuze2 == "B":
-        keuze3 = input()
+        keuze3 = input("You decided to go look for more weapons, which way do you go?\n"
+        "a) Go right\n"
+        "b) Go left")
         if keuze3 == "a" or keuze3 == "A":
             keuze4 = input()
             if keuze4 == "a" or keuze4 == "A":
@@ -91,7 +93,9 @@ elif keuze1 == "b" or keuze1 == "B":
                 if keuze5 == "a" or keuze5 == "A":
                     print()
                 elif keuze5 == "b" or keuze5 == "B":
-                    keuze6 = input()
+                    keuze6 = input("You decided to walk to the left. When walking across the streets you spot an abandoned car and a house. Where will you go?\n"
+                    "a) Try to break into the abandoned car\n"
+                    "b) Enter the house")
                     if keuze6 == "a" or keuze6 == "A":
                         keuze7 = input()
                         if keuze7 == "a" or keuze7 == "A":
