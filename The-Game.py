@@ -44,7 +44,7 @@ if keuze1 == "A" or "a":
                         input()                
                 if keuze5 == "b" or "B":
                     keuze6 = input("In the house you encounter a zombie, will you attack it or run from it?\n"
-                    "a) Attack the zombie"
+                    "a) Attack the zombie\n"
                     "b) Run from the zombie")
                     if keuze6 == "a" or "A":
                         print("You try to attack the zombie, but you fail to swing at the zombie because you don't have enough energy left.")
@@ -55,15 +55,27 @@ if keuze1 == "A" or "a":
         if keuze3 == "a" or "A":
             print("You enter through the front door, but you immediately get ambushed by 3 zombies. RIP")
         if keuze3 == "b" or "B":
-            keuze4 = input("You climb through the broken window, it's totally dark inside but you can see something shiny lying on the ground. You pick it up, to inspect it and you find out it's a needle. You feel pretty tired, but is it a good idea to inject yourself?"
-            "a) Inject yourself with the needle you found lying on the ground."
+            keuze4 = input("You climb through the broken window, it's totally dark inside but you can see something shiny lying on the ground. You pick it up, to inspect it and you find out it's a needle. You feel pretty tired, but is it a good idea to inject yourself?\n"
+            "a) Inject yourself with the needle you found lying on the ground.\n"
             "b) Don't inject yourself with the needle you found lying on the ground.")
             if keuze4 == "a" or "A":
-                keuze5 = input("After injecting yourself with the needle, you start to feel pretty sick and dizzy. It probably wasn't a good idea to inject yourself with a needle, but how are you going to fix this?"
-                "a) Drink some water and wait it out"
+                keuze5 = input("After injecting yourself with the needle, you start to feel pretty sick and dizzy. It probably wasn't a good idea to inject yourself with a needle, but how are you going to fix this?\n"
+                "a) Drink some water and wait it out\n"
                 "b) Inject yourself with some other needles lying on the ground")
+                if keuze5 == "a" or "A":
+                    keuze6 = input("After drinking some water, you don't feel any better, but you decide to move on. on the streets you see some zombies, will you go further inside the hospital or will you kill the zombies for food?\n"
+                    "a) Go further inside the hospital\n"
+                    "b) Kill the zombies on the street")
+                    if keuze6 == "a" or "A":
+                        keuze7 = input("Going further inside the hospital, you hear a zombie behind you, what will you do\n"
+                        "a) Try to kill the zombie\n"
+                        "b) Try to run away")
+                    if keuze6 == "b" or "B":
+                        print("You try to kill the zombies, but fail. They outnumbered you. RIP")
+                if keuze5 == "b" or "B":
+                    print("You die from an overdose. RIP")
             if keuze4 == "b" or "B":
-                keuze5 = input()
+                keuze5 = input("You walk further into the hospital, ")
 if keuze1 == "b" or "B":
     keuze2 = input("You find a broken glass bottle on the floor, you can use to try to kill the zombie. Will you try it?\n"
     "a) Attack the zombie\n"
