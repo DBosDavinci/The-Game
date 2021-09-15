@@ -61,7 +61,7 @@ if keuze1 == "a" or keuze1 == "A":
         if keuze3 == "a" or keuze3 == "A":
             print("You enter through the front door, but you immediately get ambushed by 3 zombies. RIP")
         elif keuze3 == "b" or keuze3 == "B":
-            keuze4 = input("You climb through the broken window, it's totally dark inside but you can see something shiny lying on the ground. You pick it up, to inspect it and you find out it's a needle. You feel pretty tired, but is it a good idea to inject yourself?\n"
+            keuze4 = input("You climb through the broken window and cut yourself, it's totally dark inside but you can see something shiny lying on the ground. You pick it up, to inspect it and you find out it's a needle. You feel pretty tired, but is it a good idea to inject yourself?\n"
             "a) Inject yourself with the needle you found lying on the ground.\n"
             "b) Don't inject yourself with the needle you found lying on the ground.")
             if keuze4 == "a" or keuze4 == "A":
@@ -81,7 +81,25 @@ if keuze1 == "a" or keuze1 == "A":
                 elif keuze5 == "b" or keuze5 == "B":
                     print("You die from an overdose. RIP")
             elif keuze4 == "b" or keuze4 == "B":
-                keuze5 = input("You walk further into the hospital, ")
+                keuze5 = input("You walk further into the hospital and you smell something horrible coming from a room a couple of meters away. Will you go check it out?\n"
+                "a) Check out the room\n"
+                "b) Don't check out the room")
+                if keuze5 == "a" or keuze5 == "A":
+                    print("You go to check out the room, after entering the room you find out the horrible smell is a dead body, and a zombie is standing on top of it. It immediately jumps to you, and due to the injury you sustained earlier, the zombie kills you. RIP")
+                if keuze5 == "b" or keuze5 == "B":
+                    keuze6 = input("You don't go to check out the room, but you are feeling really low on energy, because of the injury you sustained earlier. You want to look for some food, but where?\n"
+                    "a) Search the bin you saw before entering the hospital\n"
+                    "b) Try to kill zombies on the streets")
+                    if keuze6 == "a" or keuze6 == "A":
+                        keuze7 = input("You went to go and check out the bin outside the hospital, in there you found some food, but it seems rotten. Will you eat it?\n"
+                        "a) Eat the food\n"
+                        "b) Don't eat the food")
+                        if keuze7 == "a" or keuze7 == "a":
+                            print("You decided not to eat the food you found, and walk along the steet looking for other food. You encounter a zombie, but due to your lack of energy you can't get away or kill the zombie. RIP")
+                        if keuze7 == "b" or keuze7 == "B":
+                            print("You eat the food and you immediately taste that it's very bad, but you keep eating because otherwise you will die of starvation. After finishing the food you feel really sick, and after a couple of minutes die. RIP")
+                    if keuze6 == "b" or keuze6 == "B":
+                        print("You go on the steets to kill some zombies to eat, but due to the injury you sustained earlier, you lack the ability to kill a zombie. RIP")
 elif keuze1 == "b" or keuze1 == "B":
     keuze2 = input("You find a broken glass bottle on the floor, you can use to try to kill the zombie. Will you try it?\n"
     "a) Attack the zombie\n"
