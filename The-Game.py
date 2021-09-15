@@ -112,8 +112,8 @@ elif keuze1 == "b" or keuze1 == "B":
         "b) Go left")
         if keuze3 == "a" or keuze3 == "A":
             keuze4 = input("You decided to walk to the left. When walking across the streets you spot an abandoned car and a house. Where will you go?\n"
-            "a) Try to break into the abandoned car\n"
-            "b) Enter the house")
+            "a) Enter the house\n"
+            "b) Try to break into the abandoned car")
             if keuze4 == "a" or keuze4 == "A":
                 keuze5 = input("After entering the house, You can go into the living room or upstairs, where will you go?\n"
                 "a) Go upstairs\n"
