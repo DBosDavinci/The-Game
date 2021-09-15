@@ -41,7 +41,13 @@ if keuze1 == "a" or keuze1 == "A":
                             elif keuze8 == "b" or keuze8 == "B":
                                 print()                   
                     elif keuze6 == "b" or keuze6 == "B":
-                        input()                
+                        keuze7 = input("You decided not to eat the flesh from the zombie you just killed. When continuing walking back on the road, you can go two ways. Right or Left?\n"
+                        "a) Go right\n"
+                        "b) Go left")
+                        if keuze7 == "a" or keuze7 == "A":
+                            input()
+                        elif keuze7 == "b" or keuze7 == "B":
+                            print("You walk to the left, but you didn't read the sign that said Minefield. RIP")
                 elif keuze5 == "b" or keuze5 =="B":
                     keuze6 = input("In the house you encounter a zombie, will you attack it or run from it?\n"
                     "a) Attack the zombie\n"
@@ -87,32 +93,42 @@ elif keuze1 == "b" or keuze1 == "B":
         "a) Go right\n"
         "b) Go left")
         if keuze3 == "a" or keuze3 == "A":
-            keuze4 = input()
+            keuze4 = input("You decided to walk to the left. When walking across the streets you spot an abandoned car and a house. Where will you go?\n"
+            "a) Try to break into the abandoned car\n"
+            "b) Enter the house")
             if keuze4 == "a" or keuze4 == "A":
-                keuze5 = input()
+                keuze5 = input("After entering the house, You can go into the living room or upstairs, where will you go?\n"
+                "a) Go upstairs\n"
+                "b) Go into the living room")
                 if keuze5 == "a" or keuze5 == "A":
-                    print()
+                    print(name,"decides to walk up the stairs, when you are about halfway upstairs a zombie comes around the corner. You startle and fall down the stairs and break your neck. RIP")
                 elif keuze5 == "b" or keuze5 == "B":
-                    keuze6 = input("You decided to walk to the left. When walking across the streets you spot an abandoned car and a house. Where will you go?\n"
-                    "a) Try to break into the abandoned car\n"
-                    "b) Enter the house")
+                    keuze6 = input("You go into the living room, there seems to be a curious smell. You want to figure out what it is.\n"
+                    "a) Check the table\n"
+                    "b) Check the closet")
                     if keuze6 == "a" or keuze6 == "A":
-                        keuze7 = input()
+                        keuze7 = input("You check out the table, but you cant there seem te be anything. You go to further check out the house. Where do you go?\n"
+                        "a) Go into the basement\n"
+                        "b) Go into the kitchen")
                         if keuze7 == "a" or keuze7 == "A":
-                            keuze8 = input()
+                            keuze8 = input("After going into the basement, you hear some loud growling. Will you check it out or run back up?\n"
+                            "a) Check out the basement further\n"
+                            "b) Run back upstairs")
                             if keuze8 == "a" or keuze8 == "A":
-                                print()
+                                print("You walk further into the basement, even though you hear a lot of growling. You walk up to the boiler, and a zombie appears from behind it. Because you are low on energy you cant get away and the zombie eats you. RIP")
                             elif keuze8 == "b" or keuze8 == "B":
-                                keuze9 = input()
+                                keuze9 = input("You run back upstairs, but you trip on the stairs. The zombies catch up to you. What will you do?\n"
+                                "a) Try to run from the zombies\n"
+                                "b) Try to kill the zombies")
                                 if keuze9 == "a" or keuze9 == "A":
-                                    print()
+                                    print("You try to run from the zombies, but because you are low on energy you can't get away. RIP")
                                 elif keuze9 == "b" or keuze9 == "B":
-                                    print()
+                                    print("You decide to try to kill the zombies, but because you are low on energy you fail to kill them. RIP")
                         elif keuze7 == "b" or keuze7 == "B":
-                            print()
+                            print("You decided to go to the kitchen for some food, because you feel quite low on energy. In the refrigerator you find a bowl of salad. You eat, but after eating it you feel dizzy and fall over. RIP")
                     elif keuze6 == "b" or keuze6 == "B":
-                        print()
+                        print("You decided to open the closet, but when you tried to open the closet it falls over and crushes you. RIP")
             elif keuze4 == "b" or keuze4 == "B":
-                print()
+                print(name,"tries to break into an abandoned car. You break the window and open te car from te inside. The keys are still in the car and you try to start the car, but the car instantly explodes. RIP")
         elif keuze3 == "b" or keuze3 == "B":
-            print()
+            print(name,"decides to go left, a zombie is coming after you and you hit a dead end. RIP")
