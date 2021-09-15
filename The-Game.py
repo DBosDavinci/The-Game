@@ -24,7 +24,7 @@ if keuze1 == "a" or keuze1 == "A":
                     if keuze6 == "a" or keuze6 == "A":
                         keuze7 = input()
                         if keuze7 == "a" or keuze7 == "A":
-                            print(name,"chooses to go left")
+                            print("You walk to the left, but you didn't read the sign that said Minefield. RIP")
                         elif keuze7 == "b" or keuze7 == "B":
                             keuze8 = input()
                             if keuze8 == "a" or keuze8 == "A":
@@ -39,7 +39,7 @@ if keuze1 == "a" or keuze1 == "A":
                                     elif keuze10 == "b" or keuze10 == "B":
                                         print("You walk to the airplane, you drive onto the flying path. A swarm of zombies is coming after you, but you are out of reach. You fly away and you completed the game! Congratulations",name,"!")
                             elif keuze8 == "b" or keuze8 == "B":
-                                print()                   
+                                print("After walking another kilometer or so, you encounter a zombie on the road. You fight it and win, but later die of wounds and starvation. RIP")                   
                     elif keuze6 == "b" or keuze6 == "B":
                         keuze7 = input("You decided not to eat the flesh from the zombie you just killed. When continuing walking back on the road, you can go two ways. Right or Left?\n"
                         "a) Go right\n"
@@ -54,7 +54,7 @@ if keuze1 == "a" or keuze1 == "A":
                                 "b) Look for food\n>")
                                 if keuze9 == "a" or keuze9 == "A":
                                     print("You couldn't make the jump over the barbed wire on the fence, because you didnt have enough energy left. RIP")
-                                if keuze9 == "b" or keuze9 == "B":
+                                elif keuze9 == "b" or keuze9 == "B":
                                     print("You go back further into the forest to look for some food, because you're feeling low on energy. But you fail to find any, so you die of starvation. RIP")
                             elif keuze8 == "b" or keuze8 == "B":
                                 print("After walking another kilometer or so, you encounter a zombie on the road. You fight it and win, but later die of wounds and starvation. RIP")
@@ -68,6 +68,26 @@ if keuze1 == "a" or keuze1 == "A":
                     print("You try to attack the zombie, but you fail to swing at the zombie because you don't have enough energy left. RIP")
                 elif keuze5 == "b" or keuze5 == "B":
                     print("You try to run from the zombie, but you don't have enough energy left. RIP")
+        elif keuze3 == "b" or keuze3 == "B":
+            keuze4 = input("You go deeper into the forest and you spot a boar, because you're feeling hungry you want to kill it, but can you take a boar?\n"
+            "a) Try to kill the boar\n"
+            "b) Try looking for some other food\n>")
+            if keuze4 == "a" or keuze4 == "A":
+                print("You try to kill the boar you found, but it rams your leg and you cant walk anymore, You can't move and later die of starvation. RIP")
+            elif keuze4 == "b" or keuze4 == "B":
+                keuze5 = input("You try looking for some other food, because the boar seems to dangerous. After walking around for a bit you find a bush with berries in it, you don't have much knowledge about it but the berries seem poisonous. Will you eat them?\n"
+                "a) Eat the poisonous-looking berries\n"
+                "b) Don't eat them and look for something else\n>")
+                if keuze5 == "a" or keuze5 == "A":
+                    print("You try eating the poisonous-looking berries, but you immediately throw up and later die of starvation. RIP")  
+                elif keuze5 == "b" or keuze5 == "B":
+                    keuze6 = input("You decide not to eat the berries, even though you are really hungry. You walk around for a bit more, but suddenly you trigger a trap and fall almost 5 meters deep. What will you do?\n"
+                    "a) Try to climb out of the trap\n"
+                    "b) Try to dig a tunnel out of the trap\n>")
+                    if keuze6 == "a" or keuze6 == "A":
+                        print("You try to climb out of the trap, but after reaching halfway, you fall to your death because you didnt have enough energy left. RIP")
+                    elif keuze6 == "b" or keuze6 == "B":
+                        print("You try to dig a tunnel out of the trap, but after digging for a while you're totally exhausted and die of starvation, because you didn't have enough energy left. RIP")  
     elif keuze2 == "b" or keuze2 == "B":
         keuze3 = input("You walk up to the hospital, but the front door is open. You also spot a broken window on the side of the building. How will you enter the building\n"
         "a) Enter through the front door\n"
