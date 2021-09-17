@@ -17,25 +17,39 @@ if keuze1 in A:
     if keuze2 in A:
         keuze3 = input("You arrive in the forest, you arrive at an abandoned house. Will you go inside or go further into the forest?\n"
         "a) Enter the abandoned house\n"
-        "b) Go deeper into the forest?>")
+        "b) Go deeper into the forest?\n>")
         if keuze3 in A:
-            keuze4 = input()
+            keuze4 = input("After entering the house, you spot an energy drink. Because you ran from the zombie in the beginning you feel quite tired, will you drink the energy drink?\n"
+            "a) Drink the energy drink\n"
+            "b) Don't drink the energy drink\n>")
             if keuze4 in A:
-                keuze5 = input()
+                keuze5 = input("In the house you encounter a zombie, will you attack it or run from it?\n"
+                "a) Attack the zombie\n"
+                "b) Run from the zombie\n>")
                 if keuze5 in A:
-                    keuze6 = input()
+                    keuze6 = input("You succesfully killed the zombie, and you feel quite hungry after killing it. Will you eat its flesh?\n"
+                    "a) Eat the zombie's flesh\n"
+                    "b) Don't eat the zombie's flesh\n>")
                     if keuze6 in A:
-                        keuze7 = input()
+                        keuze7 = input("After eating the zombie's flesh, you leave the house and go back on the forest's road. Will you go right or left?\n"
+                        "a) Go left\n"
+                        "b) Go right\n>")
                         if keuze7 in A:
                             print("You walk to the left, but you didn't read the sign that said Minefield. RIP")
                         elif keuze7 in B:
-                            keuze8 = input()
+                            keuze8 = input("You go right and end up on a very long road, you walk an endless path and wonder if its worth staying on the road. What will you do?\n"
+                            "a) Go back into the forest\n"
+                            "b) Stay on the road\n>")
                             if keuze8 in A:
-                                keuze9 = input()
+                                keuze9 = input("You go back into the forest. You spot a fence, but you are feeling quite tired. Will you go climb over it or look for some food.\n"
+                                "a) Try to find a way around the fence\n"
+                                "b) Try to climb over the fence\n>")
                                 if keuze9 in A:
-                                    print()
+                                    print("You try to find a way around the fence, but instead of finding a way around it, you encounter a zombie and fail to kill it. RIP")
                                 elif keuze9 in B:
-                                    keuze10 = input()
+                                    keuze10 = input("You climb over the fence, and you find out you ended up on the airport. You see a man standing at the entrance of the airport. Will you inform him of the zombie apocalypse or go directly to the airplane?\n"
+                                    "a) Speak to the man\n"
+                                    "b) Go straight to the airplane\n>")
                                     if keuze10 in A:
                                         print("You walk to the man on the airport, just before you can open your mouth to speak to him you notice he has a weird look on his face. The man walks straight towards you and you try"
                                         "to run from him, but there is already a swarm of zombies behind you. RIP")
@@ -63,6 +77,8 @@ if keuze1 in A:
                                 print("After walking another kilometer or so, you encounter a zombie on the road. You fight it and win, but later die of wounds and starvation. RIP")
                         elif keuze7 in B:
                             print("You walk to the left, but you didn't read the sign that said Minefield. RIP")
+                elif keuze5 in A:
+                    print("You try to run from the zombie, but trip on the doorstep. It eats you alive. RIP")
             elif keuze4 in B:
                 keuze5 = input("In the house you encounter a zombie, will you attack it or run from it?\n"
                 "a) Attack the zombie\n"
